@@ -2,19 +2,21 @@ body, html {
     height: 100%;
 }
 
-#navImg{
-    float: left;
-}
-
-#navBar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.navBar{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    background-color: white;
+        border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 2px;
 }
 
 .navLi{
     float: right;
+    font-family: monospace;
+    font-size: 1.5em;
 }
 
 li a {
@@ -33,27 +35,21 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
-nav {
-    font-family: monospace;
-    font-size: 1.5em;
-    
-}
-
 .hero-image-index {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/heroImage.png");
-
     /* Set a specific height */
     height: 100%;
+
     /* Position and center the image to scale nicely on all screens */
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
 .hero-image-contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/imgContactBanner.jpg");
-
     /* Set a specific height */
     height: 70%;
     /* Position and center the image to scale nicely on all screens */
