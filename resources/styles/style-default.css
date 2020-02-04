@@ -12,6 +12,7 @@ body, html {
         border-bottom-style: solid;
     border-bottom-color: gray;
     border-bottom-width: 2px;
+    z-index: 9999;
 }
 
 .navLi{
@@ -46,17 +47,6 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
-}
-
-.hero-image-contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/imgContactBanner.jpg");
-    /* Set a specific height */
-    height: 70%;
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
 }
 
@@ -104,4 +94,17 @@ button:hover {
 
 .contactImg {
     padding: 10px 10px 10px 10px;
+}
+
+#meet-the-team {
+    display: inline-block;
+}
+
+#teampic {
+    float: left;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    width: 45%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
